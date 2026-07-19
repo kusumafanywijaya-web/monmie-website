@@ -20,3 +20,10 @@ buttons.forEach((btn) => {
     btn.style.transform = "scale(1)";
   });
 });
+function copyCA() {
+  const ca = document.getElementById("ca").innerText;
+
+  navigator.clipboard.writeText(ca);
+
+  alert("✅ Contract Address Copied!");
+}
